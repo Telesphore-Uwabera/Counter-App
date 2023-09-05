@@ -1,21 +1,18 @@
-/* Style for the whole container */
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
 #app {
   text-align: center;
   margin-top: 50px;
 }
 
-/* Style for the header */
 h1 {
   font-size: 24px;
   color: #333;
 }
 
-/* Style for the body */
-body {
-  background-color: #fff; /* White background color for the body */
-}
-
-/* Style for the counter display */
 .counter {
   font-size: 36px;
   font-weight: bold;
@@ -23,7 +20,6 @@ body {
   color: #007bff; /* Blue color for the counter */
 }
 
-/* Style for the buttons */
 .increment,
 .decrement {
   font-size: 18px;
@@ -37,13 +33,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Style for button hover effect */
 .increment:hover,
 .decrement:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Style for button click effect */
 .increment:active,
 .decrement:active {
   background-color: #003c80; /* Even darker blue on click */
