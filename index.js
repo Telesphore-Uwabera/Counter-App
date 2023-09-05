@@ -1,4 +1,4 @@
-import "./style.css";
+import "style.css";
 
 // Get references to the counter elements
 const counterElement = document.querySelector('.counter');
