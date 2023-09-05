@@ -1,4 +1,4 @@
-import "style.css";
+import "./style.css";
 
 // Get references to the counter elements
 const counterElement = document.querySelector('.counter');
@@ -15,37 +15,19 @@ function updateCounterDisplay() {
 
 // Function to handle the increment button click
 function handleIncrementClick() {
-  counterValue++;
+  counterValue += 1; // Increase by 1
   updateCounterDisplay();
 }
 
 // Function to handle the decrement button click
 function handleDecrementClick() {
-  counterValue--;
+  counterValue -= 1; // Decrease by 1
   updateCounterDisplay();
 }
 
-// Function to handle mouseover events for the increment button
-function handleIncrementMouseOver() {
-  incrementButton.addEventListener('click', handleIncrementClick);
-}
-
-// Function to handle mouseover events for the decrement button
-function handleDecrementMouseOver() {
-  decrementButton.addEventListener('click', handleDecrementClick);
-}
-
-// Function to handle mouseleave events for both buttons
-function handleMouseLeave() {
-  incrementButton.removeEventListener('click', handleIncrementClick);
-  decrementButton.removeEventListener('click', handleDecrementClick);
-}
-
-// Add mouseover and mouseleave event listeners to the buttons
-incrementButton.addEventListener('mouseover', handleIncrementMouseOver);
-decrementButton.addEventListener('mouseover', handleDecrementMouseOver);
-incrementButton.addEventListener('mouseleave', handleMouseLeave);
-decrementButton.addEventListener('mouseleave', handleMouseLeave);
+// Add click event listeners to the buttons
+incrementButton.addEventListener('click', handleIncrementClick);
+decrementButton.addEventListener('click', handleDecrementClick);
 
 // Initial update of the counter display
 updateCounterDisplay();
