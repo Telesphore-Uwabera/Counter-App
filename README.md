@@ -97,3 +97,6 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+The link to Counter app page is https://telesphore-uwabera.github.io/Counter-App/
